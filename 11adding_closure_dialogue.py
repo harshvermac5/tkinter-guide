@@ -7,13 +7,6 @@ class MyGUI:
 
         self.root = tk.Tk()
 
-        self.filemenu = tk.Menu(self.menubar, tearoff=0)
-        self.filemenu.add_command(label="Close", command= self.on_closing)
-
-        self.menubar.add_cascade(menu=self.filemenu, label="File")
-
-        self.root.config(menu=self.menubar)
-
         self.label = tk.Label(self.root, text="Hello World")
         self.label.pack()
 

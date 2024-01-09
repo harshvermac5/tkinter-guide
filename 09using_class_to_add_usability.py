@@ -11,7 +11,7 @@ class MyGUI:
         self.textbox = tk.Text(self.root, font=("Fira Code", 10), width=50, height=10)
         self.textbox.pack()
 
-        self.check_state = tk.IntVar()
+        self.check_state = tk.IntVar() #initialise a intvar to keep track of state
 
         self.check = tk.Checkbutton(self.root, text="Show Messagebox", font=("Fira Sans", 10), variable=self.check_state)
         self.check.pack(padx=10, pady=20)
@@ -26,4 +26,5 @@ class MyGUI:
             print(self.textbox.get("1.0", tk.END))
         else:
             messagebox.showinfo(title="Message", message=self.textbox.get("1.0", tk.END))
+        
 MyGUI()

@@ -11,7 +11,7 @@ class MyGUI:
         self.label.pack()
 
         self.textbox = tk.Text(self.root)
-        self.textbox.bind("<KeyPress>", self.shortcut)
+        self.textbox.bind("<KeyPress>", self.shortcut) #Binding text box to key configuration to enable saving by pressing ctrl + enter
         self.textbox.pack()
 
         self.check_state = tk.IntVar()

@@ -43,7 +43,7 @@ btncall = tk.Button(buttonlayout,text="Call", font=("Fira Sans", 12))
 btncall.grid(row=3, column=2, sticky=tk.W+tk.E)
 
 #Filling as X streches out the whole to window
-buttonlayout.pack()
+buttonlayout.pack(fill="x")
 
 #placing another button using text function
 #we can either use the abosolute or the relaive values for height, width and size
